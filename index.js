@@ -1,15 +1,15 @@
 'use strict';
 
 var through = require('through2');
-var jade = require('jade');
-var jadePhp = require('jade-php');
+var pug = require('pug');
+var pugPhp = require('pug-php');
 var ext = require('gulp-util').replaceExtension;
 var PluginError = require('gulp-util').PluginError;
 
-jadePhp(jade);
+pugPhp(pug);
 
 function handleCompile(contents, opts){
-  return jade.compile(contents, opts)(opts.locals || opts.data);
+  return pug.compile(contents, opts)(opts.locals || opts.data);
 }
 
 function handleExtension(filepath, opts) {
@@ -29,14 +29,14 @@ module.exports = function(options) {
     file.path = handleExtension(file.path, opts);
 
     if(file.isStream()){
-      return cb(new PluginError('gulp-jade-php', 'Streaming not supported'));
+      return cb(new PluginError('gulp-pug-php', 'Streaming not supported'));
     }
 
     if(file.isBuffer()){
       try {
         file.contents = new Buffer(handleCompile(String(file.contents), opts));
       } catch(e) {
-        return cb(new PluginError('gulp-jade-php', e));
+        return cb(new PluginError('gulp-pug-php', e));
       }
     }
     cb(null, file);
