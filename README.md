@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/oroce/gulp-jade-php.png?branch=master)](https://travis-ci.org/oroce/gulp-jade-php)
-gulp-jade-php
+This is pug fork of [jade-php](https://github.com/viniwrubleski/jade-php)
 =============
 
 Compiles [jade-php](https://github.com/viniwrubleski/jade-php) templates using gulp.
