@@ -1,17 +1,13 @@
 This is pug fork of [jade-php](https://github.com/viniwrubleski/jade-php)
 =============
 
-Compiles [jade-php](https://github.com/viniwrubleski/jade-php) templates using gulp.
-
-This module is based on the well written [gulp-jade](https://github.com/phated/gulp-jade).
-
 ### Usage
 
-    var jade = require('gulp-jade-php');
+    var jade = require('gulp-pug-php');
 
     gulp.task('templates', function() {
-      gulp.src('./views/**/*.jade')
-        .pipe(jade({
+      gulp.src('./views/**/*.pug')
+        .pipe(pug({
             locals: {
               title: 'OMG THIS IS THE TITLE'
             }
@@ -21,7 +17,7 @@ This module is based on the well written [gulp-jade](https://github.com/phated/g
 
 ### Options
 
-Since this module based on gulp-jade, it supports everything mentioned in its [README](https://github.com/phated/gulp-jade#options).
+Since this module based on gulp-pug, it supports everything mentioned in its [README](https://github.com/jamen/gulp-pug#pugopts).
 
 Also you can customize the extension of the outputted files. By default the extension will be `.php`, but you can pass `extension: '.phtml'` to generate phtml files.
 
