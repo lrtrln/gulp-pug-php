@@ -1,30 +1,30 @@
 {
-  "name": "gulp-jade-php",
-  "version": "1.1.0",
-  "description": "compile jade php",
+  "name": "gulp-pug-php",
+  "version": "1.0.0",
+  "description": "compile pug php",
   "main": "index.js",
   "scripts": {
     "test": "tap ./test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oroce/gulp-jade-php.git"
+    "url": "https://github.com/Meshock/gulp-pug-php.git"
   },
   "keywords": [
-    "jade",
+    "pug",
     "php",
     "gulp"
   ],
   "author": "oroce <robert@oroszi.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oroce/gulp-jade-php/issues"
+    "url": "https://github.com/Meshock/gulp-pug-php/issues"
   },
-  "homepage": "https://github.com/oroce/gulp-jade-php",
+  "homepage": "https://github.com/Meshock/gulp-pug-php",
   "dependencies": {
     "gulp-util": "^3.0.0",
-    "jade": "^1.7.0",
-    "jade-php": "0.1.1",
+    "pug": "^1.7.0",
+    "pug-php": "0.1.1",
     "through2": "^0.5.1"
   },
   "devDependencies": {
