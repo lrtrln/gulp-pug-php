@@ -18,6 +18,6 @@
 
 ### Options
 
-Since this module based on gulp-pug, it supports everything mentioned in its [README](https://github.com/jamen/gulp-pug#pugopts).
+This module based on gulp-pug, os it supports everything options of gulp-pug [README](https://github.com/jamen/gulp-pug#pugopts).
 
 Also you can customize the extension of the outputted files. By default the extension will be `.php`, but you can pass `extension: '.phtml'` to generate phtml files.
