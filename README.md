@@ -1,6 +1,6 @@
 ## This plugin not tested
 
-### This is pug fork of [jade-php](https://github.com/viniwrubleski/jade-php)
+## This is pug fork of [gulp-jade-php](https://github.com/oroce/gulp-jade-php)
 
 ### Usage
 
